@@ -13,4 +13,8 @@ export class TodosService {
   findAll() {
     return this.todosRepository.find();
   }
+
+  createTodo(todo: Todo): Promise<Todo> {
+    return this.todosRepository.save(todo);
+  }
 }

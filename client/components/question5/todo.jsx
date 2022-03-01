@@ -6,10 +6,10 @@ export const Todo = ({ todo }) => {
 
   const onCheckboxChange = async (e) => {
     setCheckboxChecked(e.target.checked);
-    // put your API call here!
-    // you wont actually need to do anything with the result of the API call
-    // because we are optimistically updating the state.
-    // When you refresh the page you should see your state persist.
+    const todoBody = {
+      isComplete: !checkboxChecked,
+    };
+    await api.put(`/todos/${todo.id}`, todoBody);
   };
 
   return (
