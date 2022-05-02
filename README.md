@@ -1,7 +1,7 @@
 # MidtermStart
 
 ## Description
-A starter app with Postgres, NestJS, and React
+A simple app with Postgres, NestJS, and React. The purpose of this app was to test various React skills. One of my first React projects.
 
 ## Cloning the project
 IMPORTANT Windows users should setup WSL first before cloning. See [WSL_SETUP.md](/WSL_SETUP.md)
